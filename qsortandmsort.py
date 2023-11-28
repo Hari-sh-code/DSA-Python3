@@ -45,3 +45,11 @@ class Sorter:
       self.arr[i], self.arr [right] = self.arr[right],self.arr[i]
     return i
 
+original_arr = [9,7,6,4,3,5,7,8,5,3]
+print("Original array: ",original_arr)
+sorter = Sorter(original_arr)
+sorter1 = Sorter(original_arr.copy())
+sorter.quicksort(0,len(original_arr)-1)
+sorter1.mergesort()
+print("QuickSort result: ",sorter.arr)
+print("MergeSort result: ",original_arr)
